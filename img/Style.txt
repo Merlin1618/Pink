@@ -1,0 +1,24 @@
+.Logo(Скачать приложение) {
+  border-style: solid;
+  border-width: 3px;
+  border-color: rgb(255, 255, 255);
+  background-color: rgba(255, 255, 255, 0);
+  position: absolute;
+  left: 125px;
+  top: 444px;
+  width: 304px;
+  height: 60px;
+  z-index: 15;
+}
+Цвета
+Красный:
+	color: rgb(210, 40, 86)
+	
+	
+Зеленый:
+	color: rgb(0, 255, 168)
+	color: rgb(42, 171, 109)
+	color: rgb(28, 155, 94)
+	
+
+

@@ -1,0 +1,274 @@
+.nav {
+	display: flex;
+	flex-wrap: wrap;
+  font-weight: 400;
+  flex-direction: column;
+}
+.main-nav{
+	list-style: none;
+  margin-top: 0;
+  margin-bottom: 0;
+  background-color: #283645;
+  margin:auto;
+}
+  a:hover{
+  box-shadow: 0 0 2px Azure;
+}
+
+
+@media (min-width: 320px) {
+  .main-nav{
+    width: 280px;
+  }
+  .main-nav div{
+      background-color: #283645;
+      margin-right: 40px;
+      border-bottom: 2px solid black;
+      /*border: 1px solid red;*/
+    }
+  	.main-nav li{
+  		padding-top: 10px;
+      padding-bottom: 10px;
+  		text-align: center;
+      font-size: 1.5rem;
+      
+
+  	}
+    .main-nav a{
+      color: white;
+    }
+    .main-nav a:hover{
+      border-bottom: 2px solid white;
+    }
+    .logo--tablet{
+      display: none;
+    }
+    .logo--desk{
+      display: none;
+    }
+  	
+  	.logo{
+  		display: none;
+  	}
+    .logo--mobile{
+      display: block;
+      position: relative;
+    }
+
+    .logo--mobile li{
+      text-align: left;
+    }
+
+    .logo--mobile span{
+      float: right;
+      text-align: right;
+    }
+
+    .logo--mobile span:before,
+    .logo--mobile span:after{
+      content: "";
+      position: absolute;
+      right: 10px;
+      top: 28px;
+      width: 20px;
+      height: 4px;
+      background-color: white;
+      border-radius: 1px;
+      transform: rotate(45deg);
+    }
+
+    .logo--mobile span:after{
+      transform: rotate(-45deg);
+    }
+    .download{
+      background: #253341;
+      width: 320px;
+      margin:auto;
+    }
+    .download h2{
+      display: none;
+    }
+    .download a:hover{
+      box-shadow: none;
+    }
+
+    .download span{
+      display: block;
+      margin-top: 20px;
+      margin-bottom: 20px;
+      text-align: center;
+      color: white;
+    }
+    .download a{
+      margin-left: 40px;
+    }
+    
+    
+    .wraper--logo{
+      background-color: #283645;
+      /*height: 490px;*/
+      
+    }
+    .download button{
+      width:280px;
+      height: 55px;
+      color: white;
+      border:2px solid white;
+      border-radius: 25px; 
+      margin-left: 15px;
+      margin-right: 15px;
+      margin-top: 30px;
+      margin-bottom: 30px;
+      background-color: transparent;
+      cursor: pointer;
+    }
+  }
+
+@media (min-width: 660px) {
+  	.main-nav{
+      width: 620px;
+  	}
+  	.main-nav div{
+  		background-color: #283645;
+		  margin-right: 40px;
+      border-bottom: 2px solid black;
+      border-top: 1px solid grey;
+      
+  	}
+    .main-nav div:nth-child(1){
+      border-top: none;
+    }
+    .main-nav li{
+      padding-top: 10px;
+      padding-bottom: 10px;
+      text-align: center;
+      font-size: 1.5rem;
+    }
+    .logo--desk{
+      display: none;
+    }
+    .main-nav a{
+      color: white;
+    }
+    .main-nav a:hover{
+      border-bottom: 2px solid white;
+    }
+  	.logo--tablet{
+      display: block;
+  	}
+    .download{
+      width:660px;
+    }
+    .logo--mobile{
+      padding-bottom:30px;
+    }
+    .logo--mobile li{
+      display:none;
+    }
+    /*.logo--mobile a{
+      
+      border:1px solid green;
+    }*/
+    .logo--mobile img{
+      margin-top:25px;
+    }
+    .logo--mobile span:before,
+    .logo--mobile span:after{
+      width: 30px;
+      height: 6px;
+      border-radius: 4px;
+      top:20px;
+    }
+    .phone{
+      display: none;
+    }
+    /*#283645*/
+    .download{
+      background-image: url('../../img/iphone-6 copy.png');
+      background-repeat: no-repeat; 
+      background-size: auto;
+      background-position: center;
+      min-height: 729px;
+    }
+    .download span{
+      width: 300px;
+    }
+    .download h2{
+      display: inline-block;
+      color: white;
+      font-weight: normal;
+      width: 200px;
+      text-align: center;
+      margin-top: 100px;
+      margin-left: 60px;
+    }
+    .download button{
+      margin-left: 20px;
+      margin-bottom: 40px;
+    }
+
+    
+  }
+      /*border: 1px solid red;*/
+
+@media (min-width: 1200px) {
+    .nav{
+      width: 1200px;
+      background-image: url('../../img/iphone-6.png');
+      background-repeat: no-repeat; 
+      background-size: auto;
+      background-position: center;
+      margin-left: 40px;
+
+    }
+  	.main-nav{
+      width: 1160px;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      background: rgba(0,0,0,.5);
+      margin-right: 60px;
+  	}
+    .main-nav li{
+      font-weight: 700;
+      font-size: 1.2rem;
+
+    }
+    .main-nav div {
+      margin:0;
+      border:none;
+      background: none;
+      line-height: 65px;
+      width: 180px;
+
+    }
+    
+    .main-nav div:first-child{
+      margin-right: 100px;
+      margin-left: 60px;
+    }
+    .main-nav div:last-child{
+      margin-right: 40px;
+    }
+
+    .logo--mobile img{
+      /*margin-left:auto;*/
+      
+    }
+    .logo--mobile span{
+      display: none;
+    }
+    .logo--tablet{
+      display: none;
+    }
+    .logo--desk{
+      display: block;
+    }
+    .download{
+      background: none;
+    }
+    .wraper--logo{
+      background: none;
+    }
+
+  }

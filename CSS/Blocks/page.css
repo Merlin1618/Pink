@@ -1,0 +1,49 @@
+@font-face {
+  
+}
+html {
+  font-size: 16px; 
+}
+
+body {
+  font-family: 'Open Sans' -apple-system, BlinkMacSystemFont, "Roboto", "Ubuntu", "Droid Sans", "Helvetica Neue", "Arial", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1rem;
+  line-height: 1.5;
+  background-color: LavenderBlush;
+  width: 100%;
+  min-width: 320px;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 700;
+  line-height: 1.2;
+ }
+h1 {
+  font-size: 2.5rem; }
+h2 {
+  font-size: 2rem; }
+h3 {
+  font-size: 1.5rem; }
+h4 {
+  font-size: 1.125rem; }
+h5 {
+  font-size: 1rem; }
+h6 {
+  font-size: 1rem; }
+*{
+  outline: none;
+  border-bottom: none;
+}
+a{
+  text-decoration: none;
+}
+img,picture{
+  max-width: 100%;
+  height: auto;
+}
