@@ -266,6 +266,23 @@
     }
     .download{
       background: none;
+      margin-left: 80px;
+    }
+    .download h2{
+      font-size: 3rem;
+      font-weight: 400;
+      font-style: normal;
+      width: 250px;
+    }
+    .download button{
+      margin-left: 50px;
+    }
+    .download a{
+      margin-left: 60px;
+    }
+    .download span{
+      margin-left: 40px;
+      font-size: 1.1rem;
     }
     .wraper--logo{
       background: none;
