@@ -6,14 +6,12 @@
 }
 .main-nav{
 	list-style: none;
-  margin-top: 0;
-  margin-bottom: 0;
   background-color: #283645;
   margin:auto;
 }
-  a:hover{
+/*  a:hover{
   box-shadow: 0 0 2px Azure;
-}
+}*/
 
 
 @media (min-width: 320px) {
@@ -22,17 +20,16 @@
   }
   .main-nav div{
       background-color: #283645;
-      margin-right: 40px;
+      margin-left: -40px;
+      width: 320px;
       border-bottom: 2px solid black;
-      /*border: 1px solid red;*/
     }
   	.main-nav li{
+      margin: 0;
   		padding-top: 10px;
       padding-bottom: 10px;
   		text-align: center;
       font-size: 1.5rem;
-      
-
   	}
     .main-nav a{
       color: white;
@@ -40,13 +37,6 @@
     .main-nav a:hover{
       border-bottom: 2px solid white;
     }
-    .logo--tablet{
-      display: none;
-    }
-    .logo--desk{
-      display: none;
-    }
-  	
   	.logo{
   		display: none;
   	}
@@ -54,9 +44,13 @@
       display: block;
       position: relative;
     }
-
+    .logo--mobile picture{
+      display: none;
+      margin-left: 20px;
+    }
     .logo--mobile li{
       text-align: left;
+      margin-left: 10px;
     }
 
     .logo--mobile span{
@@ -80,16 +74,71 @@
     .logo--mobile span:after{
       transform: rotate(-45deg);
     }
+    .logo--mobile--hover{
+      display: block;
+      position: relative;
+    }
+    .logo--mobile--hover div{
+      background-color: #283645;
+      margin-left: -40px;
+      width: 320px;
+      border-bottom: 2px solid black;
+    }
+    .logo--mobile--hover picture{
+      display: none;
+      margin-left: 20px;
+    }
+    .logo--mobile--hover li{
+      text-align: left;
+      margin-left: 10px;
+    }
+
+    .logo--mobile--hover span{
+      float: right;
+      text-align: right;
+    }
+
+    .logo--mobile--hover span:before,
+    .logo--mobile--hover span:after{
+      content: "";
+      position: absolute;
+      right: 10px;
+      top: 28px;
+      width: 20px;
+      height: 4px;
+      background-color: white;
+      border-radius: 1px;
+      transform: rotate(45deg);
+    }
+
+    .logo--mobile--hover span:after{
+      transform: rotate(-45deg);
+    }
+
+
     .download{
       background: #253341;
       width: 320px;
       margin:auto;
     }
+
     .download h2{
       display: none;
     }
-    .download a:hover{
-      box-shadow: none;
+    .download a:nth-of-type(1):hover{
+      filter: drop-shadow(0 0 10px azure);
+      transition-property: filter;
+      transition-duration: 0.2s;
+    }
+    .download a:nth-of-type(2):hover{
+      filter: drop-shadow(0 0 10px DarkGreen);
+      transition-property: filter;
+      transition-duration: 0.2s;
+    }
+    .download a:nth-of-type(3):hover{
+      filter: drop-shadow(0 0 10px rgb(210,40,86));
+      transition-property: filter;
+      transition-duration: 0.2s;
     }
 
     .download span{
@@ -103,11 +152,8 @@
       margin-left: 40px;
     }
     
-    
     .wraper--logo{
       background-color: #283645;
-      /*height: 490px;*/
-      
     }
     .download button{
       width:280px;
@@ -121,6 +167,21 @@
       margin-bottom: 30px;
       background-color: transparent;
       cursor: pointer;
+      font-size: 1.3rem;
+      font-weight: bold;
+    }
+    .download button:hover{
+      color: rgb(210,40,86);
+      background-color: white;
+    }
+    .download button:hover{
+      color: rgb(210,40,86);
+      background-color: white;
+    }
+    .download button:active{
+      color: rgb(210,40,86);
+      background-color: white;
+      opacity: 0.3;
     }
   }
 
@@ -130,7 +191,7 @@
   	}
   	.main-nav div{
   		background-color: #283645;
-		  margin-right: 40px;
+      width: 660px;
       border-bottom: 2px solid black;
       border-top: 1px solid grey;
       
@@ -153,9 +214,10 @@
     .main-nav a:hover{
       border-bottom: 2px solid white;
     }
-  	.logo--tablet{
-      display: block;
-  	}
+  	.logo--mobile picture{
+      display: flex;
+      margin-left: 20px;
+    }
     .download{
       width:660px;
     }
@@ -165,10 +227,6 @@
     .logo--mobile li{
       display:none;
     }
-    /*.logo--mobile a{
-      
-      border:1px solid green;
-    }*/
     .logo--mobile img{
       margin-top:25px;
     }
@@ -177,7 +235,8 @@
       width: 30px;
       height: 6px;
       border-radius: 4px;
-      top:20px;
+      top:50px;
+      right: 20px;s
     }
     .phone{
       display: none;
@@ -191,7 +250,7 @@
       min-height: 729px;
     }
     .download span{
-      width: 300px;
+      width: 320px;
     }
     .download h2{
       display: inline-block;
@@ -206,10 +265,8 @@
       margin-left: 20px;
       margin-bottom: 40px;
     }
-
-    
   }
-      /*border: 1px solid red;*/
+   
 
 @media (min-width: 1200px) {
     .nav{
@@ -218,7 +275,8 @@
       background-repeat: no-repeat; 
       background-size: auto;
       background-position: center;
-      margin-left: 40px;
+      margin: auto;
+      /*margin-left: 40px;*/
 
     }
   	.main-nav{
@@ -226,21 +284,21 @@
       display: flex;
       flex-direction: row;
       justify-content: space-around;
-      background: rgba(0,0,0,.5);
+      background: rgba(0,0,0,.3);
       margin-right: 60px;
   	}
     .main-nav li{
+      line-height: 50px;
+
       font-weight: 700;
       font-size: 1.2rem;
-
+      margin-top: 15px;
     }
     .main-nav div {
       margin:0;
       border:none;
       background: none;
-      line-height: 65px;
       width: 180px;
-
     }
     
     .main-nav div:first-child{
@@ -251,18 +309,14 @@
       margin-right: 40px;
     }
 
-    .logo--mobile img{
-      /*margin-left:auto;*/
-      
-    }
     .logo--mobile span{
       display: none;
     }
-    .logo--tablet{
-      display: none;
+    .logo--mobile picture{
+
     }
-    .logo--desk{
-      display: block;
+    .logo--mobile--hover{
+      display: none;
     }
     .download{
       background: none;
