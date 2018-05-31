@@ -1,0 +1,703 @@
+
+@media (min-width: 320px){
+.chalenge{
+	background-image: url('../../img/back-mobile@1x.jpg');
+	background-repeat: no-repeat; 
+    background-size: cover;
+    background-position: center 20%;
+	/*width: 320px;*/
+	margin: 0 auto;
+	border:1px solid red
+	overflow: hidden;
+	text-align:center;
+}
+.chalenge span{
+	color: white;
+	display: block;
+	font-size: 1.3rem;
+	font-weight: 300;
+	padding:40px 20px;
+}
+.form{
+	width: 320px;
+	margin: 0 auto;
+	font-weight: 300;
+}
+.names{
+	background-color: white;
+	padding-bottom: 40px;
+}
+.names span{
+	display: block;
+	padding: 50px 15px;
+	text-align: center;
+}
+.names label{
+	padding: 10px;
+	color: rgb(210,40,86);
+	margin-left: 20px;
+
+}
+.names input{
+	padding: 20px;
+	margin: 15px 10px;
+	border: 2px solid rgb(242,242,242);
+	width: 260px;
+}
+.names input:hover{
+	border: 2px solid black;
+	transition: all .2s;
+}
+.names input:focus{
+	border: 2px solid rgb(210,40,86);
+	transition: all .2s;
+}
+.achiv{
+	background-color: rgb(242,242,242);
+	font-weight: 400;
+	font-size: 1.1rem;
+	padding-bottom: 30px;
+	position: relative;
+}
+.achiv span{
+	display: block;
+	color: rgb(210,40,86);
+	padding: 30px 20px;
+	text-align:center;
+}
+
+.achiv input{
+	display: none;
+}
+.achiv div{
+	position: absolute;
+	width: 40px;
+	height: 40px;
+	background-color: white;
+	border: 2px solid rgb(242,242,242);
+	box-shadow: 0 0 3px 0.5px grey;
+	left:-50px;
+	top: 10px;
+
+}
+
+.achiv input+label{
+	position: relative;
+	display: block;
+	padding: 20px;
+	margin-left: 75px;
+	margin-bottom: 20px;
+	/*border:1px solid red*/
+}
+
+.achiv input:checked+label:before{
+	content: "";
+	position: absolute;
+	display: none;
+	z-index: 50;
+	width: 3px;
+	height: 30px;
+	background-color: rgb(210,40,86);
+	transform: rotate(45deg);
+	left: -23px;
+	top: 16px;
+}
+.achiv input:checked+label:after{
+	content: "";
+	position: absolute;
+	display: none;
+	z-index: 50;
+	width: 3px;
+	height: 15px;
+	background-color: rgb(210,40,86);
+	transform: rotate(-45deg);
+	left: -38px;
+	top: 28px;
+}
+.achiv input:checked + label:before,
+.achiv input:checked + label:after{
+	display: block;
+	/*border:1px solid red*/
+}
+
+.achiv label:hover div{
+	border: 2px solid black;
+	transition: all .2s;
+}
+.achiv input:checked+label div{
+	border: 2px solid rgb(210,40,86);
+	transition: all .2s;
+}
+.number{
+	width: 320px;
+	margin: 0 auto;
+	background-color: white;
+	padding-top: 30px;
+	padding-bottom: 30px;
+}
+.number input{
+	border: 2px solid rgb(242,242,242);
+	padding: 15px;
+	margin: 10px 0;
+	width: 260px;
+
+}
+.number label{
+	color: rgb(210,40,86);
+	padding: 10px 30px;
+
+}
+.number input:hover{
+	border: 2px solid black;
+	transition: all .2s;
+}
+.number input:focus{
+	border: 2px solid rgb(210,40,86);
+	transition: all .2s;
+}
+.app{
+	display: block;
+	width: 320px;
+	margin: 0 auto;
+	background-color: rgb(242,242,242);
+	padding-top: 30px;
+	font-weight: 400;
+	padding-bottom: 30px;
+}
+fieldset{
+	border: transparent;
+}
+legend{
+	font-size: 0;
+}
+.app span{
+	color: rgb(210,40,86);
+	display: block;
+	font-size: 0.9rem;
+	margin: 0 auto;
+	width: 150px;
+	text-align: center;
+}
+.app input{
+	display: none;
+}
+.app label{
+	position: relative;
+	display: block;
+	font-size: 1.1rem;
+	padding: 30px;
+	padding-left: 90px;
+}
+.app div{
+	position: absolute;
+	display: block;
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	background-color: white;
+	border:2px solid lightgrey;
+	top: 20px;
+	left: 20px;
+
+}
+.app div:before{
+	content: "";
+	position: absolute;
+	display: none;
+	width: 18px;
+	height: 18px;
+	border-radius: 50%;
+	top: 11px;
+	left: 11px;
+	background-color: rgb(210,40,86);
+	z-index: 50;
+
+}
+.app input:checked+label div:before{
+	display: block;
+}
+.app label:hover div{
+	border: 2px solid black;
+	transition: all .2s;
+}
+.app input:checked+label div{
+	border: 2px solid rgb(210,40,86);
+	transition: all .2s;
+}
+
+.massage{
+	width: 320px;
+	margin: 0 auto;
+	background-color: white;
+	padding-top: 30px;
+	font-weight: 400;
+	padding-bottom: 30px;
+	text-align: center;
+}
+.massage textarea{
+	border:2px solid lightgrey;
+}
+.massage label{
+	color: rgb(210,40,86);
+	display: block;
+	font-size: 0.9rem;
+	padding: 15px;
+}
+.massage input{
+	width: 280px;
+	height: 65px;
+	color: white;
+	font-weight: 500;
+	background-color: rgb(116,214,121);
+	letter-spacing: 2px;
+	border: none;
+	border-radius: 1px;
+	margin: 30px 25px;
+}
+
+.massage input:hover{
+	background-color:green;
+}
+.massage input:focus{
+	background-color:darkgreen;
+	opacity: 0.5;
+}
+.massage span{
+	display: block;
+	width: 200px;
+	margin: 0 auto;
+}
+footer{
+	display: flex;
+	width: 320px;
+	margin: 0 auto;
+	background-color: white;
+	flex-direction: column;
+	align-items: center;
+}
+.footer_socials_form{
+	display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.footer_socials_form div{
+	position: relative;
+	width: 50px;
+	height: 50px;
+	border: 2px solid lightgrey;
+	border-radius: 50%;
+	margin: 15px 10px; 
+}
+.footer_socials_form img{
+		position: absolute;
+		margin: auto;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+}
+.footer_socials_form div:hover{
+		border:2px solid rgb(40,54,69);
+}
+.footer_dev{
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.htmlacademy{
+		display: block;
+		float: right;
+		width: 27px;
+    	height: 34px;
+    	font-size: 30px;
+    	background-image: url(../../img/spritesheet.png);
+    	background-position: -10px -10px;
+    	background-repeat: no-repeat;
+    	margin-left: 10px;
+}
+.htmlacademy:hover {
+	background-position: -10px -64px;
+	transition-property: background;
+	transition-duration: 0.2s;
+}
+.htmlacademy:active{
+		opacity: 0.3;
+}
+}
+@media (min-width: 660px){
+	.chalenge{
+		/*width: 660px;*/
+		min-height: 330px;
+		background-image: url('../../img/back-tablet@1x.jpg');
+		background-repeat: no-repeat; 
+    	background-size: cover;
+    	background-position: center 20%;
+	}
+	.chalenge span{
+		font-size: 3.5rem;
+		font-weight: 300;
+	}
+	.form{
+		width: 660px;
+		display: flex;
+		flex-direction: column;
+	}
+	.names{
+		order: 1;
+		display: flex;
+		flex-direction: column;
+		flex-wrap: wrap;
+		align-items: center;
+	}
+	.names span{
+		font-size: 1.5rem;
+		width: 80%;
+		padding: 10px;
+		margin: 0;
+		font-weight: 500;
+	}
+	.names label{
+		margin: 0;
+		padding: 0;
+		color: rgb(210,40,86);
+		margin-left: 25px;
+		margin-top: 50px;
+		font-size: 1.2rem;
+		margin-bottom: -20px;
+		align-self: flex-start;
+	}
+	
+	.names input{
+		margin: 0;
+		padding: 0;
+		padding: 20px;
+		margin: 10px;
+		border: 2px solid rgb(242,242,242);
+		width: 72%;
+		margin-top: -45px;
+		align-self: flex-end;
+	}
+	.names input:hover{
+		border: 2px solid black;
+		transition: all .2s;
+	}
+	.names input:focus{
+		border: 2px solid rgb(210,40,86);
+		transition: all .2s;
+	}
+	.app{
+		order: 2;
+		width: 660px;
+		background-color: white;
+	}
+	.app span{
+		display: none;
+	}
+	.app fieldset{
+		width: 450px;
+		margin-right: auto;
+		margin-left: auto;
+		border: 2px solid rgb(242,242,242);
+
+	}
+	.app legend{
+		margin-right: auto;
+		margin-left: auto;
+		color: rgb(210,40,86);
+		font-size: 0.9rem;
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+	.app label{
+		margin-left: 30px;
+
+	}
+	.app input{
+		margin-left: 40px;
+
+	}
+
+	
+	.number{
+		position: relative;
+		order: 3;
+		width: 660px;
+		display: inline-block;
+	}
+	.number fieldset{
+		width: 90%;
+		margin-right: auto;
+		margin-left: auto;
+		border: 2px solid rgb(242,242,242);
+		justify-content: center;
+		align-items: center;
+
+	}
+	.number legend{
+		margin-right: auto;
+		margin-left: auto;
+		color: rgb(210,40,86);
+		font-size: 0.9rem;
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+	.number label[for="number"]{
+		position: absolute;
+		color: rgb(210,40,86);
+		top: 140px;
+		left: 70px;
+
+	}
+	.number label[for="mail"]{
+		position: absolute;
+		color: rgb(210,40,86);
+		top: 270px;
+		left: 70px;
+	}
+	.number input{
+		padding: 20px;
+		margin-left: 40px;
+		width: 80%;
+		margin-bottom: 60px;
+	}
+
+	.achiv{
+		order: 4;
+		width: 660px;
+		background-color: white;
+	}
+	.achiv span{
+		display: none;
+	}
+	.achiv fieldset{
+		width: 90%;
+		margin-right: auto;
+		margin-left: auto;
+		border: 2px solid rgb(242,242,242);
+		justify-content: center;
+		align-items: center;
+	}
+	.achiv legend{
+		margin-right: auto;
+		margin-left: auto;
+		color: rgb(210,40,86);
+		font-size: 0.9rem;
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+
+	
+	.achiv div{
+	left:-50px;
+	top: 10px;
+
+	}
+	.achiv input+label{
+	margin-left: 75px;
+	margin-bottom: 20px;
+	}
+	
+
+	.massage{
+		order: 5;
+		width: 660px;
+	}
+	.massage label{
+		display: none;
+	}
+	.massage fieldset{
+		width: 90%;
+		margin-right: auto;
+		margin-left: auto;
+		border: 2px solid rgb(242,242,242);
+		justify-content: center;
+		align-items: center;
+		min-height: 295px;
+	}
+
+	.massage legend{
+		margin-right: auto;
+		margin-left: auto;
+		color: rgb(210,40,86);
+		font-size: 0.9rem;
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+	.massage textarea{
+		width: 85%;
+		min-height: 200px;
+		margin-top: 30px;
+		font-size: 1.2rem;
+	}
+	.massage input{
+		float: left;
+	}
+	.massage span{
+		float: right;
+		margin-top: 50px;
+		margin-left: 40px;
+		margin-right: 0;
+		width: 250px;
+	}
+	footer{
+		display: flex;
+		flex-direction: row;
+		width: 660px;
+		flex-wrap: wrap;
+		justify-content: space-around;
+		/*align-items: center;*/
+	}
+	footer picture{
+		padding: 0;
+		margin: 0;
+		/*border: 1px solid red;*/
+	}
+	footer div{
+		padding: 0;
+		margin: 0;
+		/*border: 1px solid red;*/
+	}
+}
+@media (min-width: 1200px){
+	.main-nav{
+		position: relative;
+		background-image: url('../../img/back-desktop.jpg');
+		background-repeat: no-repeat; 
+    	background-size: cover;
+    	overflow: hidden;
+	}
+	.menu-hover{
+		margin-left: 220px;
+	}
+	.chalenge span{
+		position: absolute;
+	 	font-size: 2.3rem;
+	 	width: 750px;
+	 	top: 120px;
+	 	left: 190px;
+	}
+	.form{
+		width: 1200px;
+		display: flex;
+	}
+	.names{
+		width: 1200px;
+		align-self: flex-start;
+	}
+	.names input{
+		margin: 0;
+		width: 340px;
+		align-self: flex-start;
+		margin-left: 200px;
+		margin-top: -65px;
+	}
+	.names label{
+		margin: 0;	
+		margin-top: 65px;
+		margin-left: 110px;
+		font-size: 1rem;
+
+	}
+	.names span{
+		width: 70%;
+		margin: 40px 0;
+	}
+	.app{
+		display: flex;
+		align-self: flex-end;
+		width: 600px;
+		margin-top: -367px;
+		margin-right: 50px;
+		background: transparent;
+		z-index: 500;
+	}
+	.number{
+		width: 1200px;
+	}
+	.number fieldset{
+		width: 950px;
+	}
+	.number input{
+		width: 375px;
+		/*margin-left: 80px;*/
+	}
+	.number label[for="number"]{
+		position: absolute;
+		color: rgb(210,40,86);
+		top: 140px;
+		left: 155px;
+
+	}
+	.number label[for="mail"]{
+		position: absolute;
+		color: rgb(210,40,86);
+		top: 140px;
+		left: 625px;
+	}
+	.achiv{
+		width: 1200px;
+		display: inline-block;
+		/*flex-direction: column;*/
+		/*flex-wrap: wrap;*/
+	   /*align-self: stretch;*/
+	   /*justify-content: center;*/
+	   /*align-content: center;*/
+	}
+	.achiv fieldset{
+		width: 950px;
+	}
+	.achiv label{
+		display: inline-block;
+		/*align-self: flex-start;*/
+		width: 200px;
+		margin: 20px;
+	}
+	label[for="checkbox3"]{
+		float: right;
+		margin-top: -175px;
+		margin-right: 300px;
+		/*margin-left: 250px;*/
+	}
+	label[for="checkbox4"]{
+		float: right;
+		margin-right: 300px;
+		margin-top: -85px;
+		/*margin-left: 250px;*/
+	}
+	label[for="checkbox5"]{
+		float: right;
+		margin-right: -630px;
+		margin-top: -170px;
+		/*margin-left: 250px;*/
+	}
+	label[for="checkbox6"]{
+		float: right;
+		margin-right: -630px;
+		margin-top: -85px;
+		/*margin-left: 250px;*/
+	}
+	
+	
+	.massage{
+		width: 1200px;
+	}
+	.massage fieldset{
+		width: 950px;
+	}
+	.massage input{
+		margin-left: 110px;
+
+	}
+	.massage span{
+		margin-right: 90px;
+
+	}
+	footer{
+		width: 1200px;
+	}
+	.footer_socials_form{
+		margin-left: 20px;
+	}
+	.footer_dev{
+		margin-right: -5px;
+	}
+}

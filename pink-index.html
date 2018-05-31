@@ -5,40 +5,39 @@
 	<link rel="stylesheet" type="text/css" href="CSS/style.css">
 	<title>Pink</title>
 </head>
+			 <!-- displaynone -->
 <body>
 	<nav class="nav">
 		<ul class="main-nav">
 			<div class="logo--mobile">
-					<picture>
-						<source srcset="img/logotype-white-desktop.png" media="(min-width: 1200px)">
-						<source srcset="img/logotype-white-tablet.png" media="(min-width: 660px)">
-						<img src="img/logotype-white-tablet.png" alt="logotablet">
-					</picture>
+				<a href=""><picture>
+					<source srcset="img/logotype-white-desktop.png" media="(min-width: 1200px)">
+					<source srcset="img/logotype-white-tablet.png" media="(min-width: 660px)">
+					<img src="img/logotype-white-tablet.png" alt="logotablet">
+				</picture></a>
 				<li><a href="">PINK</a></li>
-				<span></span>
+				<input type="checkbox" id="toogle">
+				<label class="toggle-container" for="toogle">
+					<div></div>
+					<div></div>
+					<div></div>
+				</label>			
 			</div>
-			<div>
-				<li><a href="">Главная</a></li>
-			</div>
-			<div>
-				<li><a href="">Фотографии</a></li>
-		    </div>
-			<div>
-				<li><a href="">Конкурс</a></li>
-			</div>
-			<div>
-				<li><a href="">HTML Academy</a></li>
-		    </div>
+			<span class="menu-hover">
+				<div>
+					<li><a href="">Главная</a></li>
+				</div>
+				<div>
+					<li><a href="">Фотографии</a></li>
+			    </div>
+				<div>
+					<li><a href="pink-form.html">Конкурс</a></li>
+				</div>
+				<div>
+					<li><a href="">HTML Academy</a></li>
+			    </div>
+			</span>
 		</ul>
-			<!-- <div class="logo--mobile--hover">
-					<picture>
-						<source srcset="img/logotype-white-desktop.png" media="(min-width: 1200px)">
-						<source srcset="img/logotype-white-tablet.png" media="(min-width: 660px)">
-						<img src="img/logotype-white-tablet.png" alt="logotablet">
-					</picture>
-				<li><a href="">PINK</a></li>
-				<span></span>
-			</div> -->
 		<div class="download">
 			<h2>Взгляните на жизнь иначе!</h2>
 			<div class="wraper--logo">
@@ -141,6 +140,8 @@
 		<span><b>Звоните:</b><br><i>+7(812)555-66-66</i></span>
 		<span><b>Пишите:</b><br><i>mail@htmlacademy.ru</i></span>
 		<span><b>Приезжайте в гости:</b><br><i>ул.Большая Конюшенная,19/8</i></i></span>
+		<article><button class="butnew"></button></article>
+
 		<div class="map-decor"></div>
 		<!-- <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A37fbf1c790e3edecc8d014eba80ec836b65156a651fc5272ac25857888d4f811&amp;source=constructor" width="100%" frameborder="0"></iframe> -->
 	</aside>

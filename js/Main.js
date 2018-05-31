@@ -9,3 +9,11 @@ table2.addEventListener("click", function(event){
 	table_itself.classList.add("transform2");
 	
 });
+
+var toogle = document.getElementById("toogle");
+var menu = document.querySelector(".menu-hover");
+
+if (toogle.hasAttribute("checked"){
+	 menu.classList.add("displaynone")
+	
+	});

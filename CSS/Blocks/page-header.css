@@ -9,6 +9,9 @@
   background-color: #283645;
   margin:auto;
 }
+.displaynone{
+  display: none;
+}
 /*  a:hover{
   box-shadow: 0 0 2px Azure;
 }*/
@@ -17,6 +20,7 @@
 @media (min-width: 320px) {
   .main-nav{
     width: 280px;
+    position: relative;
   }
   .main-nav div{
       background-color: #283645;
@@ -35,6 +39,9 @@
       color: white;
     }
     .main-nav a:hover{
+      filter: drop-shadow(0 0 5px azure);
+      transition-property: filter;
+      transition-duration: 0.2s;
       border-bottom: 2px solid white;
     }
   	.logo{
@@ -52,70 +59,70 @@
       text-align: left;
       margin-left: 10px;
     }
-
-    .logo--mobile span{
-      float: right;
-      text-align: right;
+    .menu-hover{
+      /*display: block;*/
     }
-
-    .logo--mobile span:before,
-    .logo--mobile span:after{
-      content: "";
-      position: absolute;
-      right: 10px;
-      top: 28px;
-      width: 20px;
-      height: 4px;
-      background-color: white;
-      border-radius: 1px;
-      transform: rotate(45deg);
-    }
-
-    .logo--mobile span:after{
-      transform: rotate(-45deg);
-    }
-    .logo--mobile--hover{
-      display: block;
-      position: relative;
-    }
-    .logo--mobile--hover div{
-      background-color: #283645;
-      margin-left: -40px;
-      width: 320px;
-      border-bottom: 2px solid black;
-    }
-    .logo--mobile--hover picture{
+    input[type="checkbox"]{
       display: none;
-      margin-left: 20px;
-    }
-    .logo--mobile--hover li{
-      text-align: left;
-      margin-left: 10px;
     }
 
-    .logo--mobile--hover span{
-      float: right;
-      text-align: right;
-    }
-
-    .logo--mobile--hover span:before,
-    .logo--mobile--hover span:after{
-      content: "";
+    .toggle-container{
+      display: block;
       position: absolute;
-      right: 10px;
-      top: 28px;
-      width: 20px;
-      height: 4px;
-      background-color: white;
-      border-radius: 1px;
+      width: 30px;
+      height: 25px;
+      top: 18px;
+      right: 12px;
+      cursor: pointer;
+      background: transparent;
+    }
+
+    .toggle-container div{
+      height: 0px;
+      width: 32px;
+      display: block;
+      border: 1.5px solid #fff;
+      position: absolute;
+      right: 3px;
+      border-radius: 5px;
+      transition: all 300ms cubic-bezier(.61, .01, .42, 1);
+    }
+    .toggle-container:hover div{
+      border: 1.5px solid rgb(210,40,86);
+    }
+    .toggle-container div:nth-child(1) {
+      top: 0px;
+    }
+    .toggle-container div:nth-child(2) {
+      top: 8px;
+    }
+    .toggle-container div:nth-child(3) {
+      top: 16px;
+    }
+    input[type="checkbox"]:checked ~ .toggle-container div:nth-child(3){
+      display: none;
+    }
+    input[type="checkbox"]:checked ~ .toggle-container div:nth-child(1){
       transform: rotate(45deg);
+      right: 3px;
+      top: 9px;
     }
-
-    .logo--mobile--hover span:after{
+    input[type="checkbox"]:checked ~ .toggle-container div:nth-child(2){
       transform: rotate(-45deg);
+      top: 9px;
     }
+    
+    input[type="checkbox"]:checked .main-nav div:first-child{
+      border-bottom: none;
+    }
+    /*input[type="checkbox"]:checked .main-nav div:first-child*/
+    
+    /*#toogle:checked ~ span{
+      display: none;
+    }*/
 
-
+ /*div:first-child
+ >.main-nav>*/
     .download{
       background: #253341;
       width: 320px;
@@ -173,14 +180,20 @@
     .download button:hover{
       color: rgb(210,40,86);
       background-color: white;
+      transition-property: all;
+      transition-duration: 0.2s;
+      transition-timing-function: linear;
     }
     .download button:hover{
       color: rgb(210,40,86);
       background-color: white;
+      transition-property: all;
+      transition-duration: 0.2s;
     }
     .download button:active{
       color: rgb(210,40,86);
       background-color: white;
+      transition-duration: 0.2s;
       opacity: 0.3;
     }
   }
@@ -227,26 +240,25 @@
     .logo--mobile li{
       display:none;
     }
-    .logo--mobile img{
+    .logo--mobile picture{
+      display: block;
       margin-top:25px;
     }
-    .logo--mobile span:before,
-    .logo--mobile span:after{
-      width: 30px;
-      height: 6px;
-      border-radius: 4px;
-      top:50px;
-      right: 20px;s
+    .logo--mobile picture:hover{
+      filter: drop-shadow(0 0 10px azure);
+      transition-property: filter;
+      transition-duration: 0.2s;
     }
     .phone{
       display: none;
     }
     /*#283645*/
     .download{
-      background-image: url('../../img/iphone-6 copy.png');
+      background-image: url('../../img/iphone-6.png');
       background-repeat: no-repeat; 
-      background-size: auto;
+      background-size: cover;
       background-position: center;
+      overflow: hidden;
       min-height: 729px;
     }
     .download span{
@@ -264,6 +276,57 @@
     .download button{
       margin-left: 20px;
       margin-bottom: 40px;
+    }
+    .toggle-container{
+      display: block;
+      position: absolute;
+      /*border: 1px solid red;*/
+      width: 50px;
+      height: 40px;
+      /*top: 15px;*/
+      right: 18px;
+      cursor: pointer;
+      background: transparent;
+      
+    }
+    .toggle-container div{
+      height:0;
+      width: 40px;
+      display: block;
+      border: 2.5px solid #fff;
+      position: absolute;
+      /*right: 3px;*/
+      border-radius: 3px;
+      transition: all 300ms cubic-bezier(.61, .01, .42, 1);
+    }
+    .toggle-container div:nth-child(1) {
+      top: 0;
+      border: 2.5px solid #fff;
+    }
+    .toggle-container div:nth-child(2) {
+      top: 12px;
+    }
+    .toggle-container div:nth-child(3) {
+      top: 24px;
+    }
+    input[type="checkbox"]:checked ~ .logo--mobile{
+      background: red;
+    }
+    input[type="checkbox"]:checked ~ .toggle-container div:nth-child(3){
+      display: none;
+    }
+    input[type="checkbox"]:checked ~ .toggle-container div:nth-child(1){
+      transform: rotate(45deg);
+      right: 3px;
+      top: 9px;
+    }
+    input[type="checkbox"]:checked ~ .toggle-container div:nth-child(2){
+      transform: rotate(-45deg);
+      top: 9px;
+    }
+    
+    input[type="checkbox"]:checked .main-nav div:first-child{
+      border-bottom: none;
     }
   }
    
@@ -302,17 +365,18 @@
     }
     
     .main-nav div:first-child{
-      margin-right: 100px;
-      margin-left: 60px;
+      /*margin-right: 100px;*/
+      /*margin-left: 60px;*/
     }
     .main-nav div:last-child{
       margin-right: 40px;
     }
-
-    .logo--mobile span{
-      display: none;
+    .menu-hover{
+      display: flex;
     }
+
     .logo--mobile picture{
+      width: 200px;
 
     }
     .logo--mobile--hover{
@@ -340,6 +404,9 @@
     }
     .wraper--logo{
       background: none;
+    }
+    .toggle-container{
+      display: none;
     }
 
   }
