@@ -1,0 +1,557 @@
+@media (min-width: 320px)
+{
+    .freshnews{
+        display: flex;
+
+        flex-flow: column wrap;
+        align-items: center;
+    }
+    .wraper
+    {
+        display: flex;
+
+        flex-flow: column wrap;
+        align-items: center;
+    }
+    span
+    {
+        margin: 0;
+        padding: 0;
+    }
+    .icon-heart
+    {
+        display: inline-block;
+
+        width: 1em;
+        height: 1em;
+
+        stroke-width: 0;
+        stroke: currentColor;
+        fill: currentColor;
+    }
+    .freshnews_preview
+    {
+        font-size: 1rem;
+
+        display: block;
+
+        padding: 15px;
+
+        text-align: center;
+    }
+    .news
+    {
+        width: 280px;
+        margin: 0;
+        margin-bottom: 20px;
+        padding: 0;
+
+        text-align: left;
+
+        background-color: rgb(242,242,242);
+    }
+    .user_name
+    {
+        font-size: 1rem;
+        font-weight: 600;
+
+        display: block;
+
+        width: 100%;
+        margin: 0;
+        margin-top: 15px;
+        margin-left: 15px;
+        padding: 0;
+        /*padding: 15px;*/
+    }
+    .comment
+    {
+        font-size: .9rem;
+
+        display: block;
+
+        width: 100%;
+        margin: 0;
+        margin-top: 5px;
+        margin-left: 15px;
+        padding: 0;
+    }
+    .panorama
+    {
+        margin-bottom: -6px;
+    }
+    .like
+    {
+        font-size: .9rem;
+        font-weight: 500;
+
+        position: relative;
+
+        width: 50%;
+        margin-top: 5px;
+        margin-bottom: 20px;
+        margin-left: 15px;
+        padding-left: 40px;
+
+        cursor: pointer;
+
+        color: rgb(210,40,86);
+        /*border: 1px solid red;*/
+    }
+    .like picture
+    {
+        position: absolute;
+        top: 2px;
+        left: 2px;
+
+        width: 15px;
+        height: 15px;
+    }
+    .freshnews_after
+    {
+        font-size: 1rem;
+
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+    section
+    {
+        padding-bottom: 20px;
+
+        background-color: rgb(242,242,242);
+        display: flex;
+        flex-direction: row;
+
+        width: 320px;
+        margin: auto;
+
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: space-between;
+    }
+    section img
+    {
+        margin: 15px auto;
+    }
+    .box
+    {
+        position: relative;
+        display: flex;
+        
+    }
+    .box input
+    {
+        display: none;
+    }
+    .box input + label[for='checkbox1'],
+    .box input + label[for='checkbox2'],
+    .box input + label[for='checkbox3']
+    {
+        width: 50px;
+        height: 50px;
+        cursor: pointer;
+    }
+
+    .box input + label[for='range1']
+    {
+        position: relative;
+
+        display: block;
+
+        width: 240px;
+        height: 2px;
+        /*margin: 25px auto;*/
+        margin-left: -50px;
+        margin-top: 100px;
+
+        background-color: black;
+    }
+    .box input + label[for='range1']:after
+    {
+        position: absolute;
+        top: -6px;
+
+        width: 10px;
+        height: 10px;
+
+        content: '';
+
+        border: 2px solid rgb(210,40,86);
+        border-radius: 50%;
+        background-color: rgb(242,242,242);
+    }
+    .box input + label[for='range1']:hover:after,
+    .box input + label[for='range2']:hover:after,
+    .box input + label[for='range3']:hover:after
+    {
+        background-color: rgb(210,40,86);
+    }
+    .box input + label[for='checkbox1']
+    {
+        margin-top: 20px;
+        margin-bottom: 15px;
+        margin-left: 40px;
+
+        opacity: .5;
+        background-image: url('../../img/crop.png');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: auto;
+        
+    }
+    .box input + label[for='checkbox1']:hover
+    {
+        opacity: 1;
+    }
+    .box input:checked + label[for='checkbox1']
+    {
+        opacity: 1;
+        background-image: url('../../img/crop_active.png');
+    }
+    .box input + label[for='checkbox2']
+    {
+        margin-top: -80px;
+        /*margin-bottom: 15px;*/
+        margin-left: 140px;
+
+        opacity: .5;
+        background-image: url('../../img/fill.png');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: auto;
+    }
+    .box input + label[for='checkbox2']:hover
+    {
+        opacity: 1;
+    }
+    .box input:checked + label[for='checkbox2']
+    {
+        opacity: 1;
+        background-image: url('../../img/fill_active.png');
+    }
+    .box input + label[for='checkbox3']
+    {
+        margin-top: -80px;
+        margin-right: 45px;
+        /*margin-bottom: 15px;*/
+
+        opacity: .5;
+        background-image: url('../../img/contrast.png');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: auto;
+    }
+    .box input + label[for='checkbox3']:hover
+    {
+        opacity: 1;
+    }
+    .box input:checked + label[for='checkbox3']
+    {
+        opacity: 1;
+        background-image: url('../../img/contrast_active.png');
+    }
+    section button
+    {
+        font-weight: 600;
+
+        width: 280px;
+        height: 50px;
+        margin: 5px auto;
+        margin-top: 30px;
+
+        color: rgb(210,40,86);
+        border: 3px solid rgb(210,40,86);
+        border-radius: 25px;
+        background-color: white;
+        box-shadow: 0 0 3px 1px rgba(216, 110, 139, .98);
+    }
+    footer
+    {
+        padding-top: 40px;
+    }
+
+@media (min-width: 660px)
+{
+    .wraper
+    {
+        display: flex;
+
+        flex-flow: row wrap;
+        justify-content: space-around;
+        align-items: baseline;
+    }
+    #freshnews_preview1
+    {
+        font-size: 1.1rem;
+    }
+
+    .news{
+        min-height: 455px;
+        width: 300px;
+        position: relative;
+    }
+    .news_one
+    {
+        width: 640px;
+        min-height: 120px;
+    }
+    .like
+    {
+        margin: 0;
+        padding: 0;
+        position: absolute;
+        font-size: 1rem;
+        font-weight: 500;
+        padding-right: 0;
+
+        bottom: 20px;
+        left: 15px;
+        
+    }
+    .like picture
+    {
+        position: absolute;
+        top: 2px;
+        left: auto;
+        right: 2px;
+
+        width: 15px;
+        height: 15px;
+    }
+    .news_one .user_name{
+        font-size: 1rem;
+        padding-top: 0;
+        margin-top: 15px;
+    }
+    .news_one .like{
+        position: absolute;
+        /*border: 1px solid chocolate;*/
+        left: 450px;
+        top: 20px;
+        width: 150px;
+
+    }
+    .freshnews_after
+    {
+        font-size: 1.1rem;
+
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+    section{
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: flex-end;
+        /*align-items: flex-end;*/
+        /*align-self: flex-end;*/
+        width: 660px;
+    }
+    section img
+    {
+        align-self: flex-start;
+        margin: 60px 15px ;
+    }
+    .box {
+        /*border: 1px solid chocolate;*/
+        height: 55px;
+        margin-bottom: 20px;
+        margin-right: 20px;
+        align-self: flex-end;
+        border-bottom: 1px solid grey;
+    }
+    .box_1{
+        margin-top: -430px;
+    }
+    .box input + label[for='range1']
+    {
+        position: relative;
+
+        display: block;
+
+        width: 240px;
+        height: 2px;
+        /*margin: 25px auto;*/
+        margin-left: 15px;
+        margin-top: 25px;
+
+        background-color: black;
+    }
+    .box input + label[for='range1']:after
+    {
+        position: absolute;
+        top: -6px;
+
+        width: 10px;
+        height: 10px;
+
+        content: '';
+
+        border: 2px solid rgb(210,40,86);
+        border-radius: 50%;
+        background-color: rgb(242,242,242);
+    }
+    .box input + label[for='range2'],
+    .box input + label[for='range3']
+    {
+        position: relative;
+
+        display: block;
+
+        width: 240px;
+        height: 2px;
+        margin-left: 15px;
+        margin-top: 25px;
+
+        background-color: black;
+    }
+    .box input + label[for='range2']:after,
+    .box input + label[for='range3']:after
+    {
+        position: absolute;
+        top: -6px;
+
+        width: 10px;
+        height: 10px;
+
+        content: '';
+
+        border: 2px solid rgb(210,40,86);
+        border-radius: 50%;
+        background-color: rgb(242,242,242);
+    }
+    .box input + label[for='checkbox1']{
+        margin-top: 0;
+        margin-bottom: 0;
+        margin-left: 0;
+        
+    }
+    .box input + label[for='checkbox2']{
+        margin-top: -0;
+        /*margin-bottom: 15px;*/
+        margin-left: 0;
+    }
+    
+    .box input + label[for='checkbox3']
+    {
+        margin-top: -0;
+        margin-right: 0;
+    }
+    section button
+    {
+        width: 280px;
+        height: 50px;
+        margin: 0;
+        margin-right: 30px;
+        margin-bottom: 25px;
+        margin-top: 9px;
+    }
+}
+@media (min-width: 1200px)
+{
+    .main-nav{
+        min-height: 250px;
+    }
+    .chalenge{
+        position: absolute;
+        margin: 0;
+        left: 0;
+        padding: 0;
+    }
+    .chalenge_massage{
+        position: absolute;
+        top: 0; 
+        left: 0;
+        margin: 0;
+        padding: 0;
+        z-index: 1000;
+        margin-left: 30px;
+        width: 200px;
+        /*border:1px solid crimson;*/
+    }
+
+    .freshnews{
+        width: 1200px;
+        margin: auto;
+        justify-content: space-between;
+        
+    }
+    .wraper{
+        width: 940px;
+        margin: auto;
+        justify-content: space-between;
+    }
+    .freshnews_preview{
+        margin: 30px auto;
+    }
+    .comment{
+        font-size: 1rem;
+        /*border: 1px solid chocolate;*/
+        margin: 0;
+        padding: 0;
+        margin-left: 15px;
+        margin-top: 5px;
+    }
+    .news{
+        min-height: 555px;
+    }
+    .news_one{
+        width: 940px;
+        font-size: 1rem;
+        margin-left: 0;
+        min-height: 100px;
+    }
+    .news_one .comment{
+        font-size: 1rem;
+    }
+
+    .news .user_name{
+        font-size: 1rem;
+        /*border: 1px solid chocolate;*/
+        margin: 0;
+        padding: 0;
+        margin-left: 15px;
+        margin-top: 5px;
+
+    }
+    .news_one .user_name{
+        margin-left: 20px;
+    }
+    .news_one .like
+    {
+        margin-left: 300px;
+        
+    }
+    .like picture
+    {
+        position: absolute;
+        top: 2px;
+        left: auto;
+        right: -120px;
+
+        width: 15px;
+        height: 15px;
+    }
+    .news_one .like picture{
+        right: -10px;
+
+    }
+    section{
+        width: 940px;
+    }
+    .freshnews_after{
+        margin: 30px auto;
+
+    }
+    section img{
+        margin-left: 80px;
+    }
+    .box{
+        margin-right: 150px;
+    }
+    section button{
+        margin-right: 160px;
+        margin-bottom: 25px;
+        margin-top: 9px;
+    }
+}
+}
